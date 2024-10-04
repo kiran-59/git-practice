@@ -27,7 +27,7 @@ CHECK_ROOT
 #sh 15-loops-installations.sh git mysql postfix nginx
 for package in $@ # $@ refers to all arguments passed to it
 do
-  dnf list installed $package
+  dnf list installed $package -y
   if [ $? -ne 0 ]
   then
   echo "$package is not installed, going to install it.."
