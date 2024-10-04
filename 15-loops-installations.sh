@@ -5,7 +5,7 @@ R="\e[32m"
 G="\e[33m"
 N="\e[0m"
 
-CHECK_ROOT() {
+CHECK_ROOT(){
     if [ $USERID -ne 0 ]
     then
     echo "please run this script with root privilages"
