@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(ID -U)
+USERID=$(id -U)
 R="\e[32m"
 G="\e[33m"
 N="\e[0m"
@@ -12,6 +12,7 @@ CHECK_ROOT(){
     exit 1
    fi
 }
+
 
 VALIDATE(){
     if [ $1 -ne 0 ]
