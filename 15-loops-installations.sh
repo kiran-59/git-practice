@@ -1,9 +1,9 @@
 #!/bin/bash
 
 USERID=$(ID -U)
-R= "\e[32m"
-G= "\e[33m"
-N= "\e[0m"
+R="\e[32m"
+G="\e[33m"
+N="\e[0m"
 
 CHECK_ROOT() {
     if [ $USERID -ne 0 ]
@@ -32,6 +32,6 @@ do
   echo "$package is not installed, going to install it.."
   dnf install $package"
   else
-      echo "$package is already installed.. nothing to do"
-fi 
+  echo "$package is already installed.. nothing to do"
+  fi
 done
